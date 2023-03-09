@@ -68,11 +68,32 @@
           </v-row>
         </div>
       </v-col>
-      <div class="text-center mt-4">
-        <!--TODO: Change format, and add different sections to their own JSON DB files-->
-        <!--TODO: Make resume downloadable-->
-        <h1>Resume</h1>
-        <h2>Education</h2>
+      <v-col cols="12" class="padd" id="resume">
+        <div class="text-center mt-4">
+          <!--TODO: Change format, and add different sections to their own JSON DB files-->
+          <!--TODO: Make resume downloadable-->
+          <h1>Resume</h1>
+          <h2>Education</h2>
+          <div style="
+            background: lightgray;
+            border-radius: 12px;
+            width: 75%;
+            height: auto;
+            margin-left: auto;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            margin-right: auto;
+            padding-top: 1%;
+            padding-bottom: 1%;">
+            <h3 style="padding:1px;">Bachelor Degree</h3>
+            <h4>Norwegian University of Science and Technology</h4>
+            <p>Bachelor Degree in Computer Science</p>
+            <p style="
+            font-size:12px;
+            opacity: 0.5">
+            August 2021 - Today's Date
+          </p>
+        </div>
         <div style="
           background: lightgray;
           border-radius: 12px;
@@ -84,37 +105,18 @@
           margin-right: auto;
           padding-top: 1%;
           padding-bottom: 1%;">
-          <h3 style="padding:1px;">Bachelor Degree</h3>
-          <h4>Norwegian University of Science and Technology</h4>
+          <h3 style="padding:1px;">One-Year Programme</h3>
+          <h4>University of Agder</h4>
           <p>Bachelor Degree in Computer Science</p>
           <p style="
           font-size:12px;
           opacity: 0.5">
           August 2021 - Today's Date
         </p>
+        
       </div>
-      <div style="
-        background: lightgray;
-        border-radius: 12px;
-        width: 75%;
-        height: auto;
-        margin-left: auto;
-        margin-top: 1%;
-        margin-bottom: 1%;
-        margin-right: auto;
-        padding-top: 1%;
-        padding-bottom: 1%;">
-        <h3 style="padding:1px;">One-Year Programme</h3>
-        <h4>University of Agder</h4>
-        <p>Bachelor Degree in Computer Science</p>
-        <p style="
-        font-size:12px;
-        opacity: 0.5">
-        August 2021 - Today's Date
-      </p>
-      
     </div>
-  </div>
+  </v-col>
 </v-container>
 </v-app>
 </template>
