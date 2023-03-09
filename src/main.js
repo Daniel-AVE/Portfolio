@@ -8,10 +8,6 @@ import { inject } from '@vercel/analytics';
 
 loadFonts()
 
-createApp(App)
-  .use(router)
-  .use(store)
-  .use(vuetify)
-  .mount('#app')
+createApp(App).use(router).use(store).use(vuetify).mount('#app')
 
 inject();
