@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
+    "@vercel/analytics": "^0.1.11",
     "core-js": "^3.8.3",
     "roboto-fontface": "*",
     "vue": "^3.2.13",
