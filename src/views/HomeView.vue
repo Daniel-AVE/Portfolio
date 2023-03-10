@@ -75,7 +75,7 @@
           <!--TODO: Change format, and add different sections to their own JSON DB files-->
           <!--TODO: Make resume downloadable-->
           <h1>Resume</h1>
-          <h2 style="margin-top: 3.5%;">Education</h2>
+          <h2 style="margin-top: 2%;">Education</h2>
           <div class="resume">
             <h3 style="padding:1px;">Bachelor Degree</h3>
             <h4>Norwegian University of Science and Technology</h4>
