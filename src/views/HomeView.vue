@@ -3,6 +3,11 @@
     <div class="navbar-container">
       <NavBar />
     </div>
+    <div class="navbar_under_construction">
+      <v-app-bar app color="black" dark flat class="px-12">
+        <h1 class="text-purple" style="margin-left: auto; margin-right: auto; font-size: 25px;">SITE IS UNDER CONSTRUCTION</h1>
+      </v-app-bar>
+    </div>
     <v-container fluid>
       <div class="head">
         <v-row>
@@ -174,6 +179,7 @@ export default ({
   text-align: center;
   padding: 12px;
   margin-bottom: 6px;
+  margin-top: 5%;
   height: 400px;
   width: 100%;
   color: white;
