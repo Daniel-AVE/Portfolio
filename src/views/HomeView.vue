@@ -21,7 +21,7 @@
             <div
               style="
                 position: absolute;
-                z-index: 9999;
+                z-index: 9990;
                 bottom: 0;
                 margin-left: auto;
                 margin-right: auto;
@@ -35,8 +35,8 @@
             </div>
           </v-col>
           <v-col cols="5">
-            <div style="position: relative; z-index: 9999" class="mt-16">
-              <v-img src="@/assets/portrait.png" contain max-height="300"></v-img>
+            <div style="position: relative; z-index: 9990" class="mt-16">
+              <v-img src="@/assets/Portrait.png" contain max-height="300"></v-img>
             </div>
           </v-col>
         </v-row>
@@ -46,7 +46,7 @@
           <v-row>
             <v-col cols="12" sm="6">
               <div class="">
-                <v-img src="@/assets/portrait.png" max-height="300" class=""></v-img>
+                <v-img src="@/assets/Portrait2.jpg" max-height="300" class=""></v-img>
               </div>
             </v-col>
             <v-col cols="12" sm="6">
@@ -76,17 +76,7 @@
           <!--TODO: Make resume downloadable-->
           <h1>Resume</h1>
           <h2>Education</h2>
-          <div style="
-            background: lightgray;
-            border-radius: 12px;
-            width: 75%;
-            height: auto;
-            margin-left: auto;
-            margin-top: 1%;
-            margin-bottom: 1%;
-            margin-right: auto;
-            padding-top: 1%;
-            padding-bottom: 1%;">
+          <div class="resume">
             <h3 style="padding:1px;">Bachelor Degree</h3>
             <h4>Norwegian University of Science and Technology</h4>
             <p>Bachelor Degree in Computer Science</p>
@@ -94,32 +84,70 @@
             font-size:12px;
             opacity: 0.5">
             August 2021 - Today's Date
-          </p>
+            </p>
+          </div>
+          <div class="resume">
+            <h3 style="padding:1px;">One-Year Programme</h3>
+            <h4>University of Agder</h4>
+            <p>Bachelor Degree in Computer Science</p>
+            <p style="
+            font-size:12px;
+            opacity: 0.5">
+            August 2020 - June 2021
+            </p>
         </div>
-        <div style="
-          background: lightgray;
-          border-radius: 12px;
-          width: 75%;
-          height: auto;
-          margin-left: auto;
-          margin-top: 1%;
-          margin-bottom: 1%;
-          margin-right: auto;
-          padding-top: 1%;
-          padding-bottom: 1%;">
-          <h3 style="padding:1px;">One-Year Programme</h3>
-          <h4>University of Agder</h4>
-          <p>Bachelor Degree in Computer Science</p>
-          <p style="
-          font-size:12px;
-          opacity: 0.5">
-          August 2021 - Today's Date
-        </p>
-        
+        <div class="resume">
+            <h3 style="padding:1px;">High-School</h3>
+            <h4>Vardafjell VGs</h4>
+            <p>Media & Communication</p>
+            <p style="
+            font-size:12px;
+            opacity: 0.5">
+            August 2015 - June 2018
+            </p>
+        </div>
+        <h2>Experience</h2>
+        <div class="resume">
+            <h3 style="padding:1px;">Student Assistant</h3>
+            <h4>Norwegian University of Science and Technology</h4>
+            <p>Student assistant in the course IDATT1002 - Systems Development 1 at NTNU Trondheim.
+              Consists of guiding new students through the process of developing a system in a team,
+              in the form of having weekly meetings, and giving them feedback on their status in the project.
+              Furthermore, it consists of giving the new students a preliminary course in the use of GitLab,
+              as well as helping them under a DevOps workshop
+            </p>
+            <p style="
+            font-size:12px;
+            opacity: 0.5">
+            January 2023 - Today's Date
+            </p>
+          </div>
+          <div class="resume">
+            <h3 style="padding:1px;">Employee</h3>
+            <h4>7-Eleven Thomas Angells Gt.</h4>
+            <p>Customer service, sales of food- and kiosk-items. Postal services</p>
+            <p style="
+            font-size:12px;
+            opacity: 0.5">
+            September 2021 - Today's Date
+            </p>
+        </div>
+        <div class="resume">
+            <h3 style="padding:1px;">Student Assistant</h3>
+            <h4>Norwegian University of Science and Technology</h4>
+            <p>Student assistant in the course IDATT1001 - Programming 1 at NTNU Trondheim.
+              Consists of helping new students understand the content of Object Oriented Programming
+              in Java, as well as guiding them and giving feedback on their obligatory practices.
+            </p>
+            <p style="
+            font-size:12px;
+            opacity: 0.5">
+            August 2022 - December 2022
+            </p>
+        </div>
       </div>
-    </div>
-  </v-col>
-</v-container>
+    </v-col>
+  </v-container>
 </v-app>
 </template>
 
@@ -175,6 +203,21 @@ export default ({
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 9999;
+}
+
+.resume {
+  background: lightgray;
+  border-radius: 12px;
+  width: 75%;
+  height: auto;
+  margin-left: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-right: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 </style>
