@@ -75,7 +75,7 @@
           <!--TODO: Change format, and add different sections to their own JSON DB files-->
           <!--TODO: Make resume downloadable-->
           <h1>Resume</h1>
-          <h2>Education</h2>
+          <h2 style="margin-top: 3.5%;">Education</h2>
           <div class="resume">
             <h3 style="padding:1px;">Bachelor Degree</h3>
             <h4>Norwegian University of Science and Technology</h4>
@@ -106,7 +106,7 @@
             August 2015 - June 2018
             </p>
         </div>
-        <h2>Experience</h2>
+        <h2 style="margin-top: 3.5%;">Experience</h2>
         <div class="resume">
             <h3 style="padding:1px;">Student Assistant</h3>
             <h4>Norwegian University of Science and Technology</h4>
@@ -212,8 +212,8 @@ export default ({
   width: 75%;
   height: auto;
   margin-left: auto;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   margin-right: auto;
   padding-top: 1%;
   padding-bottom: 1%;
