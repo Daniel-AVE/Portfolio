@@ -1,9 +1,10 @@
 <template>
-    <v-app-bar app color="black" dark flat class="px-12">
+    <v-app-bar app color="black" dark flat class="px-12" fixed>
         <v-btn >
             <v-icon color="purple" left class="mr-2">fas fa-signature</v-icon>Daniel
         </v-btn>
         <v-spacer></v-spacer>
+        <!--TODO: Make the color change depending on which section of the page user is at-->
         <v-btn text @click="scroll('home')" class="text-purple">Home</v-btn>
         <v-btn text @click="scroll('about')">About</v-btn>
         <v-btn text @click="scroll('resume')">Resume</v-btn>

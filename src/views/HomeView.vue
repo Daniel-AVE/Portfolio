@@ -1,6 +1,8 @@
 <template>
   <v-app id="home">
-    <NavBar />
+    <div class="navbar-container">
+      <NavBar />
+    </div>
     <v-container fluid>
       <div class="head">
         <v-row>
@@ -167,5 +169,12 @@ export default ({
   width: 50%;
   background: black;
   transform: skew(0deg, -6deg);
+}
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
 }
 </style>
