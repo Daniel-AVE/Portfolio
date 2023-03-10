@@ -27,4 +27,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 Initialization of project through inspiration from: https://www.youtube.com/@aaeideapro1192
 Inspiration for the initalizing of website, then built through my own views
 
-## Website: Danielevensen.no
+## Website: www.Danielevensen.no
