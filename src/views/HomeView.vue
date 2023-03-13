@@ -81,74 +81,18 @@
           <!--TODO: Make resume downloadable-->
           <h1>Resume</h1>
           <h2 style="margin-top: 2%;">Education</h2>
-          <div class="resume">
-            <h3 style="padding:1px;">Bachelor Degree</h3>
-            <h4>Norwegian University of Science and Technology</h4>
-            <p>Bachelor Degree in Computer Science</p>
-            <p style="
-            font-size:12px;
-            opacity: 0.5">
-            August 2021 - Today's Date
-            </p>
+          <div class="resume" v-for="(items, index) in education.education" :key="items">
+            <h3>{{ education.education[index].Degree }}</h3>
+            <h4>{{ education.education[index].School }}</h4>
+            <p>{{ education.education[index].Course }}</p>
+            <p id="date">{{ education.education[index].Date }}</p>
           </div>
-          <div class="resume">
-            <h3 style="padding:1px;">One-Year Programme</h3>
-            <h4>University of Agder</h4>
-            <p>Bachelor Degree in Computer Science</p>
-            <p style="
-            font-size:12px;
-            opacity: 0.5">
-            August 2020 - June 2021
-            </p>
-        </div>
-        <div class="resume">
-            <h3 style="padding:1px;">High-School</h3>
-            <h4>Vardafjell VGs</h4>
-            <p>Media & Communication</p>
-            <p style="
-            font-size:12px;
-            opacity: 0.5">
-            August 2015 - June 2018
-            </p>
-        </div>
         <h2 style="margin-top: 3.5%;">Experience</h2>
-        <div class="resume">
-            <h3 style="padding:1px;">Student Assistant</h3>
-            <h4>Norwegian University of Science and Technology</h4>
-            <p>Student assistant in the course IDATT1002 - Systems Development 1 at NTNU Trondheim.
-              Consists of guiding new students through the process of developing a system in a team,
-              in the form of having weekly meetings, and giving them feedback on their status in the project.
-              Furthermore, it consists of giving the new students a preliminary course in the use of GitLab,
-              as well as helping them under a DevOps workshop
-            </p>
-            <p style="
-            font-size:12px;
-            opacity: 0.5">
-            January 2023 - Today's Date
-            </p>
-          </div>
-          <div class="resume">
-            <h3 style="padding:1px;">Employee</h3>
-            <h4>7-Eleven Thomas Angells Gt.</h4>
-            <p>Customer service, sales of food- and kiosk-items. Postal services</p>
-            <p style="
-            font-size:12px;
-            opacity: 0.5">
-            September 2021 - Today's Date
-            </p>
-        </div>
-        <div class="resume">
-            <h3 style="padding:1px;">Student Assistant</h3>
-            <h4>Norwegian University of Science and Technology</h4>
-            <p>Student assistant in the course IDATT1001 - Programming 1 at NTNU Trondheim.
-              Consists of helping new students understand the content of Object Oriented Programming
-              in Java, as well as guiding them and giving feedback on their obligatory practices.
-            </p>
-            <p style="
-            font-size:12px;
-            opacity: 0.5">
-            August 2022 - December 2022
-            </p>
+        <div class="resume" v-for="(items, index) in experience.experience" :key="items">
+          <h3>{{ experience.experience[index].Position }}</h3>
+          <h4>{{ experience.experience[index].Company }}</h4>
+          <p>{{ experience.experience[index].Description }}</p>
+          <p id="date">{{ experience.experience[index].Date }}</p>
         </div>
       </div>
     </v-col>
@@ -158,6 +102,8 @@
 
 <script>
 import NavBar from "../components/NavBar.vue";
+import education from "../../education.json";
+import experience from "../../experience.json";
 
 // Components
 //import HelloWorld from '../components/HelloWorld.vue';
@@ -166,7 +112,14 @@ export default ({
   name: "HomeView",
   components: {
     NavBar,
-},
+  },
+  data() {
+    return {
+      education,
+      experience,
+    }
+  },
+
 });
 </script>
 <style scoped>
@@ -225,5 +178,10 @@ export default ({
   padding-bottom: 1%;
   padding-left: 1%;
   padding-right: 1%;
+}
+
+#date {
+  font-size: 12px;
+  opacity: 0.5;
 }
 </style>
