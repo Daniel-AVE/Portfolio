@@ -1,0 +1,27 @@
+{
+    "education": [
+        {
+            "id": 1,
+            "Degree": "Bachelor Degree",
+            "School": "Norwegian University of Science and Technology",
+            "Course": "Bachelor's Degree in Computer Science",
+            "Date": "August 2021 - Today's Date"
+        },
+
+        {
+            "id": 2,
+            "Degree": "One-Year Programme",
+            "School": "University of Agder",
+            "Course": "One-Year Programme in Engineering Pre-coursse",
+            "Date": "August 2020 - June 2021"
+        },
+
+        {
+            "id": 3,
+            "Degree": "High School",
+            "School": "Vardafjell VGs",
+            "Course": "3 years in Media & Communication",
+            "Date": "August 2015 - June 2018"
+        }
+    ]
+}

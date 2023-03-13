@@ -1,0 +1,27 @@
+{
+    "experience": [
+        {
+            "id": 1,
+            "Position": "Student Assistant",
+            "Company": "Norwegian University of Science and Technology",
+            "Description": "Student assistant in the course IDATT1002 - Systems Development 1 at NTNU Trondheim. Consists of guiding new students through the process of developing a system in a team, in the form of having weekly meetings, and giving them feedback on their status in the project. Furthermore, it consists of giving the new students a preliminary course in the use of GitLab, as well as helping them under a DevOps workshop",
+            "Date": "January 2023 - Today's Date"
+        },
+
+        {
+            "id": 2,
+            "Position": "Convenience Store Employee",
+            "Company": "7-Eleven Thomas Angells Gt.",
+            "Description": "Customer service, sales of food- and kiosk-items. Postal services",
+            "Date": "September 2021 - Today's Date"
+        },
+
+        {
+            "id": 3,
+            "Position": "Student Assistant",
+            "Company": "Norwegian University of Science and Technology",
+            "Description": "Student assistant in the course IDATT1001 - Programming 1 at NTNU Trondheim. Consists of helping new students understand the content of Object Oriented Programming in Java, as well as guiding them and giving feedback on their obligatory practices.",
+            "Date": "August 2022 - December 2022"
+        }
+    ]
+}
