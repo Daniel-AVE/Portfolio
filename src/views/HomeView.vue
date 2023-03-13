@@ -55,10 +55,10 @@
               </div>
             </v-col>
             <v-col cols="12" sm="6">
-              <h5 class="mt-16">About Me</h5>
+              <h3 class="mt-16">About Me</h3>
               <br>
               <h4 class="mt-n4">I Am a Computer Science Student</h4>
-              <p class="text-grey">
+              <p class="text-grey" style="padding-right: 10%;">
                 I am a 23 year-old student from Norway, currently undergoing
                 my second year of a Bachelor in Computer Science. 
                 I come from Haugesund, Norway, and am currently living in
@@ -66,7 +66,7 @@
                 of Science and Technology.
               </p>
               <br />
-              <p class="text-grey">
+              <p class="text-grey" style="padding-right: 10%;">
                 I have experience in programming languages such as: Java, Python,
                 HTML, CSS, Vue, JS and mySQL. I'm still learning, and growing in all 
                 these languages, and have a goal of learning even more!
@@ -218,8 +218,8 @@ export default ({
   width: 75%;
   height: auto;
   margin-left: auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
   margin-right: auto;
   padding-top: 1%;
   padding-bottom: 1%;
