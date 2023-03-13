@@ -6,6 +6,8 @@
         <v-spacer></v-spacer>
         <!--TODO: Make the color change depending on which section of the page user is at-->
         <!--TODO: Make the buttons and navbar scaleable according to size of screen-->
+        <!--TODO: Implement a button to switch between English and Norwegian-->
+        <!--TODO: Implement a button to switch betewen light and dark mode-->
         <v-btn id="btn" text @click="scroll('home')" class="text-purple">Home</v-btn>
         <v-btn id="btn" text @click="scroll('about')">About</v-btn>
         <v-btn id="btn" text @click="scroll('resume')">Resume</v-btn>
