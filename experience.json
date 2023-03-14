@@ -10,7 +10,7 @@
 
         {
             "id": 2,
-            "Position": "Convenience Store Employee",
+            "Position": "Convenience Store Part-Time Employee",
             "Company": "7-Eleven Thomas Angells Gt.",
             "Description": "Customer service, sales of food- and kiosk-items. Postal services",
             "Date": "September 2021 - Today's Date"
@@ -22,6 +22,34 @@
             "Company": "Norwegian University of Science and Technology",
             "Description": "Student assistant in the course IDATT1001 - Programming 1 at NTNU Trondheim. Consists of helping new students understand the content of Object Oriented Programming in Java, as well as guiding them and giving feedback on their obligatory practices.",
             "Date": "August 2022 - December 2022"
+        },
+        {
+            "id": 4,
+            "Position": "Gas Station Part-Time Employee",
+            "Company": "Circle K Grimstad",
+            "Description": "Customer service, sales of food- and kiosk-items and gas. PLU-cashier system.",
+            "Date": "August 2020 - July 2021"
+        },
+        {
+            "id": 5,
+            "Position": "Gas Station Part-Time Employee",
+            "Company": "YX 7-Eleven Karmsundgaten",
+            "Description": "Customer service, sales of food- and kiosk-items and gas. Postal services.",
+            "Date": "September 2019 - June 2020"
+        },
+        {
+            "id": 6,
+            "Position": "Military Conscription Service",
+            "Company": "Royal Norwegian Airforce",
+            "Description": "2 months boot camp at Madla-camp, Mission Support 338sq for 6 months, Wing Ops Orland for 3 months.",
+            "Date": "July 2018 - July 2019"
+        },
+        {
+            "id": 7,
+            "Position": "Convenience Store Part-Time Employee",
+            "Company": "Jafs Gard Kiosken",
+            "Description": "Customer service, sales of food- and kiosk-items. Postal and lottery services. ",
+            "Date": "August 2015 - June 2018"
         }
     ]
 }

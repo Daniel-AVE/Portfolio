@@ -36,7 +36,11 @@
               "
               class="mt-16"
             >
-              <v-icon>fas fa-angle-double-down</v-icon>
+              <v-btn 
+              variant="plain" 
+              @click="scroll('about')"
+              id="arrow">
+              <v-icon>fas fa-angle-double-down</v-icon></v-btn>
             </div>
           </v-col>
           <v-col cols="5">
@@ -75,6 +79,7 @@
           </v-row>
         </div>
       </v-col>
+      <v-divider></v-divider>
       <v-col cols="12" class="padd" id="resume">
         <div class="text-center mt-4">
           <!--TODO: Change format, and add different sections to their own JSON DB files-->
@@ -96,6 +101,42 @@
         </div>
       </div>
     </v-col>
+    <v-col cols="12" class="px-16" id="contact">
+      <!--TODO: Revamp from text-areas to actual form-->
+      <!--TODO: Create handleSubmit() type button, to make form sendable-->
+      <!--TODO: Add contact info either above or under contact form. Email, phone-number, LinkedIn etc.-->
+        <v-row>
+          <v-col cols="12" sm="6" class="text-center mr-auto ml-auto">
+            <div style="margin-left: auto; margin-right: auto;">
+              <h1 class="mt-8">Contact me</h1>
+              <v-divider></v-divider>
+            
+              <v-row class="mt-5">
+                <v-col cols="12" sm="6">
+                  <v-text-field
+                    label="Name"
+                    persistent-hint
+                    variant="outlined"
+                  ></v-text-field>
+                </v-col>
+                <v-col cols="12" sm="6">
+                  <v-text-field
+                    label="Email"
+                    persistent-hint
+                    variant="outlined"
+                  ></v-text-field>
+                </v-col>
+              </v-row>
+              <v-textarea
+                label="Message"
+                persistent-hint
+                variant="outlined"
+              ></v-textarea>
+              <v-btn color="purple" class="mt-2" @click="handleSubmit()">Submit Now</v-btn>
+            </div>
+          </v-col>
+        </v-row>
+      </v-col>
   </v-container>
 </v-app>
 </template>
@@ -119,6 +160,12 @@ export default ({
       experience,
     }
   },
+  methods: {
+    scroll(refName){
+      const element = document.getElementById(refName);
+      element.scrollIntoView({behavior: "smooth"})
+    }
+  }
 
 });
 </script>
@@ -183,5 +230,30 @@ export default ({
 #date {
   font-size: 12px;
   opacity: 0.5;
+}
+
+#arrow:hover {
+  opacity: 0.6;
+}
+
+.contact-form {
+  background: lightgray;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5%;
+  width: 30%;
+}
+
+#contact-me {
+  justify-self: center;
+}
+
+.child {
+  display: inline-block;
+  padding: 2rem 1rem;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 8px;
 }
 </style>
