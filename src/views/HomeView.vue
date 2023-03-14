@@ -99,6 +99,18 @@
           <p>{{ experience.experience[index].Description }}</p>
           <p id="date">{{ experience.experience[index].Date }}</p>
         </div>
+        <h2 style="margin-top: 3.5%;">Extracurricular Activities</h2>
+        <div class="resume" v-for="(items, index) in extracurricular.extracurricular" :key="items">
+          <h3>{{ extracurricular.extracurricular[index].Title }}</h3>
+          <p>{{ extracurricular.extracurricular[index].Description}}</p>
+          <p>{{ extracurricular.extracurricular[index].Description2}}</p>
+          <p>{{ extracurricular.extracurricular[index].Description3}}</p>
+          <p>{{ extracurricular.extracurricular[index].Description4}}</p>
+          <p>{{ extracurricular.extracurricular[index].Description5}}</p>
+          <br>
+          <p>{{ extracurricular.extracurricular[index].Description6}}</p>
+          <p id="date">{{ extracurricular.extracurricular[index].Date }}</p>
+        </div>
       </div>
     </v-col>
     <v-col cols="12" class="px-16" id="contact">
@@ -145,6 +157,7 @@
 import NavBar from "../components/NavBar.vue";
 import education from "../../education.json";
 import experience from "../../experience.json";
+import extracurricular from "../../extracurricular.json";
 
 // Components
 //import HelloWorld from '../components/HelloWorld.vue';
@@ -158,6 +171,7 @@ export default ({
     return {
       education,
       experience,
+      extracurricular,
     }
   },
   methods: {
