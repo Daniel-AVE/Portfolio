@@ -137,6 +137,15 @@
           </div>
         </div>
       </v-col>
+      <v-divider></v-divider>
+      <v-col cols="12" class="padd" id="portfolio">
+        <div class="text-center mt-4">
+          <!--TODO: Make resume downloadable-->
+          <h1>Projects I've worked on</h1>
+          
+        </div>
+      </v-col>
+      <v-divider></v-divider>
       <v-col cols="12" class="px-16" id="contact">
         <!--TODO: Revamp from text-areas to actual form-->
         <!--TODO: Create handleSubmit() type button, to make form sendable-->
@@ -168,6 +177,9 @@
                 persistent-hint
                 variant="outlined"
               ></v-textarea>
+              <div style="color: red; font-size: 18px;">
+                <span v-if="submitted"> This function is not yet availabe, but will be available soon! </span>
+              </div>
               <v-btn class="mt-2" id="submitbtn" @click="handleSubmit()"
                 >Submit Now</v-btn
               >
@@ -198,12 +210,19 @@ export default {
       education,
       experience,
       extracurricular,
+      submitted: false,
     };
   },
   methods: {
     scroll(refName) {
       const element = document.getElementById(refName);
       element.scrollIntoView({ behavior: "smooth" });
+    },
+
+    handleSubmit() {
+      setTimeout(() => {
+        this.submitted = true;
+      }, 100);
     },
   },
 };
@@ -243,13 +262,7 @@ export default {
   background: black;
   transform: skew(0deg, -6deg);
 }
-.navbar-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-}
+
 
 .resume {
   background: lightgray;
