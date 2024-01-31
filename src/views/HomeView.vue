@@ -9,7 +9,7 @@
           class="text-purple"
           style="margin-left: auto; margin-right: auto; font-size: 25px"
         >
-          SITE IS UNDER CONSTRUCTION
+          PLANNING ON REWORKING THE WEBSITE USING REACT, STAY TUNED
         </h1>
       </v-app-bar>
     </div>
@@ -237,7 +237,7 @@ export default {
   text-align: center;
   padding: 12px;
   margin-bottom: 6px;
-  margin-top: 5%;
+  margin-top: 4%;
   height: 400px;
   width: 100%;
   color: white;
